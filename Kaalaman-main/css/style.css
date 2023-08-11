@@ -1,0 +1,1136 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+:root {
+
+  --primary-color: #1d1f25;
+  --secondary-color:#141518;
+  --third-color:whitesmoke;
+  --fourth-color:#282c38;
+  --fifth-color: #1c1c1de8;
+}
+
+.LigthMode {
+  --primary-color: white;
+  --secondary-color:rgba(245, 245, 245, 0.555);
+  --third-color:black;
+  --fourth-color:#F3EFE0;
+  --fifth-color:rgb(196, 196, 196);
+}
+
+body {
+  background-color: var(--secondary-color);
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerIcons {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60px !important;
+}
+
+.headerIcon {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 20px;
+
+}
+
+.user {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+.userDropDown img {
+  height: 50px;
+  width: 200%;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.user-Section {
+  height: 165px;
+  width: 200px;
+  background-color: var(--primary-color);
+  position: absolute;
+  z-index: 1;
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  color:var(--third-color);
+
+}
+
+
+#darkmodeBtn,
+#notification {
+  height: 50px;
+  width: 50%;
+  font-size: xx-large;
+  color:var(--third-color);
+  padding: 10px;
+  background-color: var(--primary-color);
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.subContainer {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+}
+
+.sidebar {
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.sidebar h2 {
+  width: 100%;
+  color: var(--third-color);
+}
+
+.sideBarBtn {
+  font-size: 15px;
+  background-color:var(--fourth-color);
+  margin-left: 20px;
+  display: none;
+  border-radius: 10px;
+  color: var(--third-color);
+}
+
+.h2Container {
+  width: 100%;
+  height: calc(20% - 10px);
+  display: block;
+  margin-left: 10px;
+
+}
+
+.categoriesContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.categoryContainer {
+  color: var(--third-color);
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.categoryContainer span {
+  font-size: 10px;
+}
+
+.categories-h2 {
+  font-size: 20px;
+}
+
+.categoryContainer input {
+  cursor: pointer;
+}
+
+.categories-text {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  color:var(--third-color);
+  border-radius: 10px;
+}
+
+.threadContainer {
+  min-height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.threadNavContainer {
+  min-height: 50px;
+  width: 95%;
+  margin-top: 20px;
+}
+
+.sideBar-toggle {
+  color:var(--third-color);
+  height: 100%;
+  width: 50px;
+  display: none;
+  font-size: 45px;
+
+}
+
+
+.searchBar {
+  height: 100%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.searchBarinput {
+  border: 0;
+  outline: none;
+  color: black;
+  width: 80%;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+.searchBarLogo {
+  width: 5%;
+  font-size: larger;
+  background-color: var(--primary-color);
+  padding: 20px 0px 20px 20px;
+  display: flex;
+  color: var(--third-color);
+}
+
+
+.hidePostThreadBtn {
+  color: var(--third-color);
+  width: 20%;
+  height: 50%;
+  margin-left: 50px;
+  display: none;
+  font-size: 40px;
+}
+
+
+.threadContentContainer {
+  height: 800px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.threadContentContainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.rightContainer {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-color);
+}
+
+.postThreadContainer {
+  height: 275px;
+  width: 90%;
+  background-color:var(--primary-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  color: var(--third-color);
+}
+
+.thread-post {
+  margin-left: 0px;
+  color: var(--third-color);
+}
+
+.postThreadContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.h2CategoryContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.postThreadContent h2 {
+  margin: 10px;
+  font-size: small;
+  padding: 5px;
+  margin-left: 0px;
+  font-weight: bold;
+  color:var(--third-color);
+}
+
+.category-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 20%;
+  width: 100%;
+}
+
+.selectCategory {
+  width: 40%;
+  font-size: 12px;
+  margin: 0px 10px 0px 10px;
+  border: none;
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  color:var(--third-color);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titleInp {
+  width: 60%;
+  margin: 0px 10px 0px 10px;
+  border: none;
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+  color: var(--third-color);
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 15px;
+}
+
+.titleInp::placeholder {
+  color:var(--third-color);
+}
+
+.threadInpContainer {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.threadInp {
+  height: 90%;
+  width: 100%;
+  margin: 0px 10px 0px 10px;
+  resize: none;
+  min-height: 40px;
+  border-radius: 5px;
+  background-color: var(--fourth-color);
+  color:var(--third-color);
+  border: none;
+  padding: 5px;
+}
+
+
+.threadBtnContainer {
+  margin-top: 10px;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expandPostThread .threadBtnContainer {
+  margin-top: 10px;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.postBtn {
+  background-color: #008968;
+  color: var(--third-color);
+  font-family: 'Montserrat', sans-serif;
+  width: 80px;
+  border-radius: 5px;
+  border: 0px;
+  height: 100%;
+}
+
+.expandBtn {
+  color: var(--third-color);
+  font-size: 22px;
+
+}
+
+.expandPostThread .thread-post {
+  margin-left: 10px;
+}
+
+.modular {
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.expandPostThread {
+  display: flex;
+  position: absolute;
+}
+
+.expandPostThread .h2Container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+
+.expandPostThread .expandBtn {
+  font-size: 25px;
+}
+
+.expandPostThread .postThreadContainer {
+  height: fit-content;
+  width: 800px;
+  background-color: var(--fifth-color);
+}
+
+.expandPostThread .postThreadContent {
+  height: 450px;
+  width: 100%;
+}
+
+.expandPostThread .thread-post {
+  font-size: large;
+}
+
+.expandPostThread .threadInp {
+  font-size: 20px;
+}
+
+.latestContainer {
+  width: 90%;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.latestContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.latest {
+  color: var(--third-color);
+  font-size: 24px;
+  margin-left: 25px;
+  background-color: var(--primary-color);
+}
+
+.avatar {
+  width: 60px;
+  height: 50px;
+  margin-left: 25px;
+}
+
+.content-box {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 15px;
+}
+
+.p-1 {
+  color: var(--third-color);
+  font-size: 13px;
+  margin: 0;
+  flex: 1;
+}
+
+.latestTitle {
+  color: var(--third-color);
+  margin: 0;
+  font-size: medium;
+}
+
+.creatorContainer {
+  width: 95%;
+  background-color: var(--primary-color);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--third-color);
+  padding: 10px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+
+.donate {
+  width: 23.75%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donation {
+  font-size: 12px;
+  margin-top: 5px;
+
+}
+
+.gcash {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  border-radius: 20px;
+  justify-self: center;
+}
+
+.links {
+  width: 23.75%;
+  height: 120px;
+  margin-top: 0;
+  display: flex;
+  margin: 0;
+  justify-content: space-evenly;
+  color: var(--third-color);
+}
+
+.links-2 {
+  font-size: 12px;
+  margin: 0;
+  padding-top: 5px;
+
+}
+
+.other-links {
+  padding-top: 18px;
+}
+
+
+.about {
+  width: 23.75%;
+  height: 120px;
+}
+
+.about-kaalaman {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.creator {
+  width: 23.75%;
+  height: 120px;
+}
+
+.creatorDetailsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.creatorDetailsNameContainer {
+  width: 100px;
+  align-items: center;
+  display: flex;
+}
+
+.pic-creator {
+  width: 30px;
+  height: 30px;
+}
+
+.name {
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+/* Thread Styles Start*/
+
+.threadContent {
+  width: 100%;
+  height: fit-content;
+  margin: 20px 0px 20px 0px;
+  background-color:var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color:var(--third-color);
+}
+
+.avatarTextsContainer {
+  display: flex;
+}
+
+.threadUserAvatar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color:var(--third-color);
+  margin-right: 30px;
+  text-align: center;
+}
+
+.threadUserAvatar img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.threadUserAvatar span {
+  margin-bottom: 10px;
+}
+
+.threadTextsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  word-break: break-word;
+  width: 400px;
+}
+
+.selectedThreadTextsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  word-break: break-word;
+  width: 400px;
+}
+
+.threadTexts {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color:var(--third-color);
+}
+
+.threadTexts span {
+  margin-top: 10px;
+}
+
+.threadReaction {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: var(--secondary-color);
+}
+
+.thumbsUpDownContainer {
+  display: flex;
+}
+
+.threadThumbsUp,
+.threadThumbsDown {
+  font-size: 30px;
+  margin: 5px;
+  color: var(--third-color);
+}
+
+/* Thread Style End */
+
+/* Reply Styles Start */
+
+.replyContent {
+  width: 100%;
+  height: fit-content;
+  margin: 20px 0px 20px 0px;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.replyUserAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--third-color);
+  margin-right: 30px;
+  text-align: center;
+}
+
+.replyUserAvatar img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.replyUserAvatar span {
+  margin-bottom: 10px;
+}
+
+.replyTexts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+}
+
+.repliedTo {
+  background-color: var(--secondary-color);
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  color: var(--third-color);
+}
+
+.reply {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: var(--third-color);
+}
+
+.replyReaction {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.replyThumbsUp,
+.replyThumbsDown {
+  font-size: 30px;
+  margin: 5px;
+  color: var(--third-color);
+}
+
+.replyBtnContainer {
+  color:var(--third-color);
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Reply Styles End */
+
+.backButtonContainer {
+  width: fit-content;
+  height: fit-content;
+  font-size: 40px;
+  color: var(--third-color);
+}
+
+/* reply input design start */
+
+.replyInputMainContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.replyInputSubContainer {
+  height: fit-content;
+  width: 500px;
+  background-color: var(--fifth-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 10px;
+  color: whitesmoke;
+}
+
+.replyInp {
+  height: 50px;
+  padding: 10px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.replyBtnsContainer {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  align-self: end;
+}
+
+.replyInputSubContainer span {
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #008968;
+  margin-top: 20px;
+}
+
+.replyCancelBtn {
+  margin-left: 10px;
+  background-color: red!important;
+}
+
+.replySubmitBtn {
+  background-color: green;
+  margin-right: 10px;
+}
+
+
+/* reply input design end */
+
+/* like dislike */
+
+.liked{
+  color:#008968
+}
+
+.disliked {
+ color: red;
+}
+
+/* like dislike */
+
+@media screen and (max-width: 1024px) {
+
+
+  .sidebar,
+  .rightContainer {
+    width: 20%;
+  }
+
+  .threadContent {
+    flex-direction: row;
+    font-size: 15px;
+
+  }
+
+  .threadContainer {
+    width: 65%;
+
+  }
+
+  .avatarTextsContainer {
+    justify-content: center;
+    width: 400px;
+
+  }
+
+  .threadReaction {
+    justify-content: center;
+
+    width: auto;
+  }
+
+  .threadUserAvatar {
+
+    width: auto;
+  }
+
+  .searchBarLogo {
+    padding: 13px;
+  }
+
+
+  .expandPostThread {
+    position: absolute;
+    left: 300px;
+    right: 300px;
+  }
+
+  .donation {
+    font-size: 10px;
+  }
+
+  .links-2 {
+    font-size: 10px;
+  }
+
+  .about-kaalaman {
+    font-size: 10px;
+  }
+
+  .pic-creator {
+    width: 20px;
+    height: 20px;
+
+  }
+
+  .name {
+    font-size: 10px;
+  }
+
+  .gcash {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+  .sidebar,
+  .rightContainer {
+    display: none;
+  }
+
+  .threadContainer {
+    width: 100%;
+  }
+
+  .sideBar-toggle {
+    display: flex;
+
+  }
+
+  .hidePostThreadBtn {
+    display: flex;
+
+  }
+
+  .threadNavContainer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .searchBar {
+    flex: 1;
+    padding-left: 5px;
+  }
+
+
+  .threadContent {
+    flex-direction: row;
+    font-size: 15px;
+  }
+
+  .avatarTextsContainer {
+    justify-content: center;
+  }
+
+  .threadReaction {
+    justify-content: center;
+  }
+
+  .sideBarBtn {
+    display: flex;
+  }
+
+  .sidebar {
+    position: absolute;
+    width: auto;
+    height: auto;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .modular {
+    width: 100%;
+  }
+
+  .expandPostThread {
+    position: absolute;
+
+    justify-content: center;
+    right: 100px;
+    left: 100px;
+  }
+
+
+
+
+}
+
+@media screen and (max-width:425px) {
+  .modular {
+    width: 100%;
+  }
+
+  .expandPostThread {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+  }
+
+  .threadUserAvatar {
+    margin-left: 20px
+  }
+
+  .replyUserAvatar {
+    margin-left: 20px
+  }
+
+  .threadContent {
+    flex-direction: column;
+  }
+
+  .replyContent {
+    flex-direction: column;
+  }
+
+  .donation {
+    font-size: 8px;
+  }
+
+  .links-2 {
+    font-size: 8px;
+  }
+
+  .about-kaalaman {
+    font-size: 8px;
+  }
+
+  .pic-creator {
+    width: 15px;
+    height: 15px;
+
+  }
+
+  .name {
+    font-size: 8px;
+  }
+
+  .gcash {
+    width: 15px;
+    height: 15px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .headerIcons {
+    width: 25px;
+    height: 10px;
+  }
+
+  .modular {
+    width: 100%;
+  }
+
+  .expandPostThread {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+  }
+
+  .avatarTextsContainer {
+    width: 100%;
+  }
+
+  .replyTexts {
+    margin-right: 10px;
+  }
+
+  .donation {
+    font-size: 7px;
+  }
+
+  .links-2 {
+    font-size: 7px;
+  }
+
+  .about-kaalaman {
+    font-size: 7px;
+  }
+
+  .pic-creator {
+    width: 15px;
+    height: 15px;
+
+  }
+
+  .name {
+    font-size: 7px;
+  }
+
+  .gcash {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  .headerIcons {
+    width: 5px;
+    height: 5px;
+    padding-left: 30px;
+  }
+  .headerIcons img{
+    width:35px;
+  }
+
+  .logo {
+    width: 125px;
+  }
+
+  .donation {
+    font-size: 6px;
+  }
+
+  .links-2 {
+    font-size: 6px;
+  }
+
+  .about-kaalaman {
+    font-size: 6px;
+  }
+
+  .pic-creator {
+    width: 12px;
+    height: 12px;
+
+  }
+
+  .name {
+    font-size: 6px;
+  }
+
+  .gcash {
+    width: 15px;
+    height: 15px;
+  }
+}

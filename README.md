@@ -85,7 +85,7 @@ Using the power of OneAPI and Machine Learning, in our project we showcase how w
 
 # Implementation <img src="https://user-images.githubusercontent.com/72274851/222215440-158ffdc1-8a23-4c7f-81c2-44e864d6d043.png" width="60" height="60">
 
-✅ Student goes and initially registers on the portal after which he/she can login and access the existing posts on the portal.
+✅ Student goes and initially registers on a student forum portal after which he/she can login and access the existing posts on the portal.
 
 ✅ The student can post their posts on the forum as well.
 

@@ -21,21 +21,48 @@ Our solution employs advanced NLP techniques to analyze the language used in stu
 # Impact
 We believe that by combining technology with empathy, we can make a significant impact on students' lives. Early intervention and emotional support are crucial factors in preventing tragic outcomes. Our system is designed to enhance educators' and counselors' ability to reach out when students need it most.
 
-# Team Members <img src="https://www.seekpng.com/png/full/969-9691477_github-organization-icon.png)https://www.seekpng.com/png/full/969-9691477_github-organization-icon.png" width="60" height="60">
+# Team Members <img src="https://camo.githubusercontent.com/012932956a1c252e20a2e296e01ef7463b9d9d33cd00f6a33d77ad88c18c646c/68747470733a2f2f636f6e646974696f6e2d616c7068612e636f6d2f736f6674776172652f696d616765732f676974757365722e706e67" width="60" height="60"> 
+
+
+<img src="https://www.seekpng.com/png/full/969-9691477_github-organization-icon.png)https://www.seekpng.com/png/full/969-9691477_github-organization-icon.png" width="60" height="60">
 
 🤺 Alvis Abreo
 
-🤺 Saiyam Chettri.
-🤺 Mayur C.
-🤺 Reyona Ronald.
+🤺 Saiyam Chettri
+
+🤺 Mayur C
+
+🤺 Reyona Ronald
 
 # Project Overview
-# Technologies Used
-# Methodology for Building
-# Implementation
-# Challenges Faced 
-# Innovations & Unique Features
-# Future Enhancements
+ 
+ • 
+ • 
+ • 
+
+ 
+# Dependencies Used <img src="https://user-images.githubusercontent.com/72274851/222215296-64d3a566-02c2-4ff9-9b8f-9ec5096f5799.png" width="60" height="60">
+ 
+ •  
+ • 
+ • 
+ • 
+ • 
+ • 
+ • 
+
+
+# Methodology for Building <img src="https://repository-images.githubusercontent.com/273951747/c2380780-b3f6-11ea-99c3-21c2dcc9ba2c" width="60" height="50"> 
+
+# Implementation <img src="https://user-images.githubusercontent.com/72274851/222215440-158ffdc1-8a23-4c7f-81c2-44e864d6d043.png" width="60" height="60"> 
+
+# Challenges Faced <img src="https://www.loginradius.com/blog/static/db8a52fc54f8db8b8c3c7c58719160a3/03979/testing-challenges.png" width="60" heights="60">
+
+# Innovations & Unique Features <img src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2023/03/3.15.23-scott-snyder-esg-corporate-innovation-GettyImages-1410816388.png">
+ Integrating suicide detection in an application which is often used by students rather than detecting it explicitly.
+ 
+# Future Enhancements <img src="https://royalsociety.org/-/media/policy/projects/human-enhancement/human-enhancement.jpg?w=1000 width="60" height="60"> 
+ The solution when integrated with NLP can be integrated in a mobile application for continous data recording and processing so that there will be continous detection. This methodology is already used by platforms like INSTAGRAM and FACEBOOK for target/niche advertising.
 
 
 

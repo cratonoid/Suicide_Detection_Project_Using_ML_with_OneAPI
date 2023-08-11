@@ -62,7 +62,7 @@ Using the power of OneAPI and Machine Learning, in our project we showcase how w
 🔧 We chose a categorical dataset comsisting of reddit platform's data comprising of 2 columns and 2,33,338 rows.
 🔧 Then we performed the following on the dataset:
             
-            PreProcessing of text:
+          • PreProcessing of text:
                          1. Punctuation removal
                          2. Stop word removal
                          3. Tokenization
@@ -71,11 +71,11 @@ Using the power of OneAPI and Machine Learning, in our project we showcase how w
                          6. Train BiLSTM model
                          7. Prediction and accuracy
 
-   Comment text collection
+          • Comment text collection
 
-   Construction of weighted word vector
+          • Construction of weighted word vector
 
-   Obtaining comment text representation
+          • Obtaining comment text representation
 
 🔧 After this we created an online forum portal for students using nodejs, html and css where the students can register, login and use the forum to discuss things openly.
 
@@ -84,7 +84,21 @@ Using the power of OneAPI and Machine Learning, in our project we showcase how w
 
 
 # Implementation <img src="https://user-images.githubusercontent.com/72274851/222215440-158ffdc1-8a23-4c7f-81c2-44e864d6d043.png" width="60" height="60">
-✅ At 
+
+✅ Student goes and initially registers on the portal after which he/she can login and access the existing posts on the portal.
+
+✅ The student can post their posts on the forum as well.
+
+✅ The posts can be made either by typing the text via keyboard or by using a mic.
+
+✅ If the microphone is used the voice is then converted to text.
+
+✅ Either ways the text is then stored in the database based on the data for each user individually.
+
+✅ For each individual the data is then processed by summarising their data of past few days and then this data is sent to the model for processing.
+
+✅ The model then analyses if the student is having thoughts relating to commiting suicide and if so, the counsellor is informed about the same via the stored contact information.
+
 
 
 

@@ -24,8 +24,6 @@ We believe that by combining technology with empathy, we can make a significant 
 # Team Members <img src="https://camo.githubusercontent.com/012932956a1c252e20a2e296e01ef7463b9d9d33cd00f6a33d77ad88c18c646c/68747470733a2f2f636f6e646974696f6e2d616c7068612e636f6d2f736f6674776172652f696d616765732f676974757365722e706e67" width="60" height="60"> 
 
 
-<img src="https://www.seekpng.com/png/full/969-9691477_github-organization-icon.png)https://www.seekpng.com/png/full/969-9691477_github-organization-icon.png" width="60" height="60">
-
 🤺 Alvis Abreo
 
 🤺 Saiyam Chettri
@@ -36,9 +34,8 @@ We believe that by combining technology with empathy, we can make a significant 
 
 # Project Overview
  
- • 
- • 
- • 
+Using the power of OneAPI and Machine Learning, in our project we showcase how we can use student forums and conversation done on any microphone to detect if a student is prone to have intriguing thoughts of commiting suicide which is based on analysis of data recorded for past few days. We have also used Natural Language Processing (NLP) to add convenince to recording of data for analysis.
+
 
  
 # Dependencies Used <img src="https://user-images.githubusercontent.com/72274851/222215296-64d3a566-02c2-4ff9-9b8f-9ec5096f5799.png" width="60" height="60">
@@ -52,16 +49,38 @@ We believe that by combining technology with empathy, we can make a significant 
  • 
 
 
-# Methodology for Building <img src="https://repository-images.githubusercontent.com/273951747/c2380780-b3f6-11ea-99c3-21c2dcc9ba2c" width="60" height="50"> 
+# Methodology for Building <img src="https://repository-images.githubusercontent.com/273951747/c2380780-b3f6-11ea-99c3-21c2dcc9ba2c" width="60" height="50">
+🔧
 
-# Implementation <img src="https://user-images.githubusercontent.com/72274851/222215440-158ffdc1-8a23-4c7f-81c2-44e864d6d043.png" width="60" height="60"> 
 
-# Challenges Faced <img src="https://www.loginradius.com/blog/static/db8a52fc54f8db8b8c3c7c58719160a3/03979/testing-challenges.png" width="60" heights="60">
+# Implementation <img src="https://user-images.githubusercontent.com/72274851/222215440-158ffdc1-8a23-4c7f-81c2-44e864d6d043.png" width="60" height="60">
+✅ 
 
-# Innovations & Unique Features <img src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2023/03/3.15.23-scott-snyder-esg-corporate-innovation-GettyImages-1410816388.png">
- Integrating suicide detection in an application which is often used by students rather than detecting it explicitly.
+# Challenges Faced <img src="https://www.loginradius.com/blog/static/db8a52fc54f8db8b8c3c7c58719160a3/03979/testing-challenges.png" width="60" heights="70">
+
+✗ To decipher a system which is convenient to register data for model prediction. 
+
+✗ To avoid false positives and false negatives.
+
+✗ Cultural and Contextual variables.
+
+✗ Model Bias and Fairness.
+
+✗ Algorithm Complexity.
+
+✗ Improving the model.
+
+✗ Integration and intercompatibility of diverse applications.
+
+✗ Limited datasets available.
+
+✗ User Acceptance and Compliances.
+
+# Innovations & Unique Features <img src="https://knowledge.wharton.upenn.edu/wp-content/uploads/2023/03/3.15.23-scott-snyder-esg-corporate-innovation-GettyImages-1410816388.png" width="70" height="50">
+Integrating suicide detection algorithm to a student forum and a microphone helps to record the data in a covenient manner rather than recording data explicitly such like a form (most of the users are reluctant about).
+
  
-# Future Enhancements <img src="https://royalsociety.org/-/media/policy/projects/human-enhancement/human-enhancement.jpg?w=1000 width="60" height="60"> 
+# Future Enhancements <img src="https://royalsociety.org/-/media/policy/projects/human-enhancement/human-enhancement.jpg?w=1000" width="60" height="60"> 
  The solution when integrated with NLP can be integrated in a mobile application for continous data recording and processing so that there will be continous detection. This methodology is already used by platforms like INSTAGRAM and FACEBOOK for target/niche advertising.
 
 

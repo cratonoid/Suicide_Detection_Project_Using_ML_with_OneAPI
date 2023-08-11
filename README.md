@@ -41,9 +41,7 @@ Using the power of OneAPI and Machine Learning, in our project we showcase how w
 # Dependencies Used <img src="https://user-images.githubusercontent.com/72274851/222215296-64d3a566-02c2-4ff9-9b8f-9ec5096f5799.png" width="60" height="60">
  
  •  
- • 
- • 
- • 
+ •  
  • 
  • 
  • 

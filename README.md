@@ -59,7 +59,7 @@ Using the power of OneAPI and Machine Learning, in our project we showcase how w
 
 
 # Methodology for Building <img src="https://repository-images.githubusercontent.com/273951747/c2380780-b3f6-11ea-99c3-21c2dcc9ba2c" width="60" height="50">
-🔧 We chose a categorical dataset comsisting of reddit platform's data comprising of 2 columns and 2,33,338 rows.
+🔧 We chose a categorical dataset comsisting of reddit platform's data comprising of 2 columns and 2,33,338 rows available at https://www.kaggle.com/datasets/nikhileswarkomati/suicide-watch. 
 🔧 Then we performed the following on the dataset:
             
           • PreProcessing of text:

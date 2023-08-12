@@ -1,0 +1,179 @@
+<%- include ('header-public') %>
+
+    <body class="boards-body">
+        <div class="board-banner">
+
+        </div>
+        <hr class="ninety">
+        <hr class="below-title">
+
+        <div class="post-form">
+            <div id="post-form-toggle"><a href="" id="top-head">Student Forum</a></div>
+            <!--4chans 'form' is a table, so I made my own version of it cuz I ain't touching that-->
+            <div id="threadForm">
+                <form id="postForm">
+                    <div class="inputField">
+                        <div for="comment" class="label" id="boardComment">Comment</div><textarea name="comment"
+                            id="comment" cols="48" rows="4" wrap="soft" tabindex="4"></textarea>
+                    </div>
+                    <div class="inputField">
+                        <button type="submit">Post</button>
+                    </div class="inputField">
+
+                    <div id="outputDiv"></div>
+                </form>
+                <div for="subject" id="submitBtn" class="label">Voice post</div>
+                <button id="startBtn">Start</button>
+                <button id="stopBtn">Stop</button>
+            </div>
+
+        </div>
+        <div class="board-announcment">
+            <hr class="short-length">
+            <p>9/11/2023 - Welcome to the Student Forum. Please read the rule and be civil</p>
+            <hr class="short-length">
+        </div>
+
+        <!--display each thread from this board, make a seperate file for this ? -->
+        <div class="thread-tools" style="text-align:left">
+            [<a id="analyse">Analyse</a>]
+        </div>
+        <hr>
+
+        <% threads.forEach(function(thread){%>
+            <hr>
+            <section class="thread-container id-<%= thread.id %> clearfix">
+                <div class="thread">
+                    <blockquote id="thread-message" class="comment">
+                        <%= thread.post%>
+
+                    </blockquote>
+                    <blockquote id="thread-author" class="comment"></blockquote>
+                    <%= thread.authorid %>
+                        </blockquote>
+                        <!-- Begin comments-->
+                </div>
+                <% }); %>
+                    </div>
+                    </div>
+            </section>
+            <hr>
+            <hr>
+            <div class="pagelist desktop">
+                <!--Fix ! -->
+                <div class="pages">[<a href="1">1</a>] [<a href="2">2</a>] [<a href="3">3</a>] [<a href="4">4</a>]
+                    [<a href="5">5</a>] [<a href="6">6</a>] [<a href="7">7</a>] [<a href="8">8</a>] [<a href="9">9</a>]
+                    [<a href="10">10</a>] </div <div class="next">
+            </div>
+            </div>
+            <br>
+            <script src="/assets/js/boards-main.js"></script>
+            <script src="/assets/js/threads-main.js"></script>
+            <script>
+                const submit = document.getElementById("postForm")
+                submit.addEventListener("submit", (e) => {
+                    e.preventDefault();
+                    const endpoint = `/postcomment`
+                    let comment = document.getElementById("comment")
+                    if (comment.value == "") {
+                        alert("No post written!");
+                    } else {
+                        let username = getCookie("username")
+                        sendData = { 'username': username, 'comment': comment.value }
+                        console.log(sendData)
+                        fetch(endpoint, {
+                            method: "POST",
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(sendData)
+                        })
+                            .then(() => {
+                                window.location.reload()
+                            })
+                            .catch(err => console.log(err))
+                    }
+                });
+
+                function getCookie(name) {
+                    const cookies = document.cookie.split(';');
+                    for (let i = 0; i < cookies.length; i++) {
+                        const cookie = cookies[i].trim();
+                        if (cookie.startsWith(name + '=')) {
+                            return cookie.substring(name.length + 1);
+                        }
+                    }
+                    return null;
+                }
+
+                const analyse = document.getElementById("analyse")
+                analyse.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const endpoint = `/analyse`
+                    fetch(endpoint, {
+                        method: "GET",
+                    })
+                        .then(response => {
+                            // Check if the response status is OK (200)
+                            if (!response.ok) {
+                                throw new Error(`HTTP error! Status: ${response.status}`);
+                            }
+                            // Parse the response body as JSON and return it
+                            return response.json();
+                        })
+                        .then(data => {
+                            // 'data' now contains the JSON response body
+                            console.log(data);
+                            // You can do further processing or display the data on your webpage
+                            // Example: Display an alert box for each entry
+                            for (const entry of data) {
+                                const authorId = entry.authorid;
+                                const percentage = entry.percentage;
+
+                                const message = `Username: ${authorId}, Percentage: ${percentage * 100}%`;
+                                alert(message);
+                            }
+
+                        })
+                        .catch(error => {
+                            console.error('Fetch error:', error);
+                        });
+                })
+
+                const SpeechRecognition = window.speechRecognition || window.webkitSpeechRecognition
+                const SpeechGrammarList =
+                    window.SpeechGrammarList || window.webkitSpeechGrammarList;
+                const SpeechRecognitionEvent =
+                    window.SpeechRecognitionEvent || window.webkitSpeechRecognitionEvent;
+                const recognition = new SpeechRecognition();
+
+                recognition.continuous = false;
+                recognition.lang = 'en-US';
+                recognition.interimResults = false;
+                recognition.maxAlternatives = 1;
+
+                var start = document.getElementById("startBtn")
+                var stop = document.getElementById("stopBtn")
+                start.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    recognition.start();
+                    alert("speak.....")
+                });
+
+                recognition.onresult = function (event) {
+                    var txt = event.results[0][0].transcript;
+                    console.log(txt);
+                    comment = document.querySelector('#comment')
+                    comment.innerHTML = txt
+                };
+
+                recognition.onspeechend = function () {
+                    recognition.stop();
+                };
+
+                stop.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    recognition.stop();
+                })
+
+            </script>
+    </body>
+    <%- include ("footer") %>
